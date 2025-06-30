@@ -97,17 +97,20 @@ Te amo más de lo que las palabras pueden expresar.. cuídate mucho, mi vida, y 
   <button class="boton" onclick="mostrarSorpresa()">Haz clic para una sorpresa</button>
 
   <script>
-    function mostrarSorpresa() {
-      const carta = document.getElementById("carta");
-      carta.innerHTML += `
-        <p style="text-align:center; font-size: 20px; margin-top: 30px;">
-          🌹 Te amo más de lo que las palabras pueden decir 🌹<br>
-          💌 Esta carta es solo un pequeño reflejo de lo que siento por ti 💌
-        </p>
-        <div class="corazon">💗</div>
-      `;
-    }
-  </script>
+  function mostrarSorpresa() {
+    const carta = document.getElementById("carta");
+    carta.innerHTML += `
+      <p style="text-align:center; font-size: 20px; margin-top: 30px;">
+        🌹 Te amo más de lo que las palabras pueden decir 🌹<br>
+        💌 Esta carta es solo un pequeño reflejo de lo que siento por ti 💌
+      </p>
+      <div style="text-align: center; margin-top: 20px;">
+        <img src="amor.jpeg" alt="Nosotros" style="max-width: 100%; border-radius: 12px; box-shadow: 0 0 15px pink;">
+      </div>
+      <div class="corazon">💗</div>
+    `;
+  }
+</script>
 
 </body>
 </html>
