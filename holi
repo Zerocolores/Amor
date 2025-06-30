@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Mi Amor</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Cursive', 'Georgia', serif;
+      padding: 40px;
+      color: #5a2a2a;
+    }
+
+    .carta {
+      background: #fffafa;
+      border: 2px dashed #ff99c8;
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(255, 192, 203, 0.5);
+      line-height: 1.7;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #c71585;
+    }
+
+    .firma {
+      text-align: right;
+      margin-top: 40px;
+      font-style: italic;
+    }
+
+    .corazon {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 10px;
+      color: #ff3366;
+      animation: latido 1s infinite;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .boton {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 25px;
+      background: #ff69b4;
+      border: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .boton:hover {
+      background: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carta" id="carta">
+    <h2>Para la dueña de mi corazón 💖</h2>
+    <p>
+      Mi esposita hermosa,<br><br>
+      No hay palabras suficientes para describir lo que siento por ti.. cada día que tengo la dicha de compartir contigo, aunque sea a la distancia, es un regalo que la vida me ha dado. Hoy más que nunca quiero que sepas cuánto te amo.
+
+<p>Desde que supe de tu accidente, no he dejado de pensar en ti.. ojalá pudiera estar a tu lado para cuidarte, abrazarte fuerte y decirte que todo va a estar bien. Me duele no poder hacerlo en persona, pero mi corazón está contigo en cada momento.
+</p>
+<p>
+Sé que ayer tuvimos un malentendido, y lo lamento profundamente.. nada en este mundo vale más que tu bienestar y nuestra conexión. No quiero que una discusión borre todo lo que hemos construido ni todo lo que siento por ti.
+</p>
+<p>
+Tu sonrisa ilumina mis días, incluso cuando no la veo.. tu voz tiene el poder de calmar mi alma, y tu amor me da fuerzas para seguir adelante. Gracias por existir, por ser tú, por quedarte a pesar de todo.
+</p>
+Te amo más de lo que las palabras pueden expresar.. cuídate mucho, mi vida, y recuerda que aquí estoy, siempre para ti.
+    </p>
+    <p>
+      Gracias por ser como eres, por amarme, por hacerme sentir la persona más afortunada del mundo. Estoy deseando construir mil recuerdos más contigo.
+    </p>
+    <p>
+      Eres mi todo, mi presente y mi futuro. ❤️
+    </p>
+    <div class="firma">
+      Con todo mi amor,<br>
+      Tu esposito❤️
+    </div>
+    <div class="corazon">❤</div>
+  </div>
+
+  <button class="boton" onclick="mostrarSorpresa()">Haz clic para una sorpresa</button>
+
+  <script>
+    function mostrarSorpresa() {
+      const carta = document.getElementById("carta");
+      carta.innerHTML += `
+        <p style="text-align:center; font-size: 20px; margin-top: 30px;">
+          🌹 Te amo más de lo que las palabras pueden decir 🌹<br>
+          💌 Esta carta es solo un pequeño reflejo de lo que siento por ti 💌
+        </p>
+        <div class="corazon">💗</div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
